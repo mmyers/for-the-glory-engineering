@@ -1,6 +1,7 @@
 ---
 title: "1.1, 1.2, and what happened next"
 date: 2023-12-16
+tags: history
 ---
 
 ### Patches and bad news
