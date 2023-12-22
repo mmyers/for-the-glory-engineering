@@ -6,6 +6,7 @@ tags: technical
 
 ### Fun With Text Files  
 #### (or, Blogs About Logs)
+#### (or, A Yule Logging Story)
 Since October, I've been doing a lot of hands-off games to tweak and test AI changes. For the first several games, I would simply run it through to the end and visually check the state of the world and the AI's tech levels. Then I realized I was ignoring a lot of potentially useful information in the log files.
 
 When compiled and run as a debug build, For the Glory generates three log files (not countring netlog.txt, which is only used in multiplayer games):

@@ -1,6 +1,7 @@
 ---
 title: "The Road to For the Glory 1.0"
 date: 2023-12-08
+tags: history
 ---
 *This post is adapted from a previous university talk, which was not recorded.*
 

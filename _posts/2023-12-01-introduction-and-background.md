@@ -1,6 +1,7 @@
 ---
 title: "Introduction and background"
 date: 2023-12-01
+tags: history
 ---
 
 ## How For the Glory came to be
