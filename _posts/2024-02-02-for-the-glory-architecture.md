@@ -1,19 +1,19 @@
 ---
-title: "For the Glory architecture"
+title: "For the Glory architecture: the client/server relationship"
 date: 2024-02-02
-tags: technical
+tags: technical bug architecture
 ---
 
 It took me months, if not years, to really understand the structure of the Europa engine on which For the Glory is based. I hope to help you understand it in the next ten minutes.
 
-You might have coded a game before. I know I had tried my hand at a few before working on FTG. If you've built any kind of map-based game, you'd expect to find C++ classes like Province and Country in FTG, and you'd be correct. However, it's not that simple.
+If you're a programmer, you've likely coded your own game at some point. I know I had tried my hand at a few before working on FTG. If you've built any kind of map-based game, you'd expect to find C++ objects like Province and Country in FTG, and you'd be correct. However, it's not that simple.
 
-For the Glory allows multiplayer games. There is no separate server, so the engine has to act as both client and server. That means that any modification of state has to either be tracked entirely on the server or sent in an event to all clients. Of course, for most games, there is only one client, but this does not change the program flow.
+For the Glory allows multiplayer games. There is no separate server, so the engine has to act as both client and server, and it must always keep track of whether it is acting as a server or as a client. Any modification of state (e.g. adding monthly income to a country or changing the population of a province) has to either be tracked entirely on the server, be sent in an event to all clients, or be completely deterministic. Of course, for most games, there is only one client, but this does not change the program flow.
 
-**This also means we must be VERY careful to have all randomness occur ONLY on the server.** Clients must not derive their own random numbers unless the random number generators are all pre-seeded with something that all clients can agree on. This is a class of bug that you won't discover immediately, since testing is usually done on a single machine that (by definition) agrees with itself.
+**This architecture means we must be VERY careful to have all randomness occur ONLY on the server.** Clients must not derive their own random numbers unless the random number generators are all seeded deterministically with something that all clients can agree on. This is a class of bug that you won't discover immediately, since testing is usually done on a single machine that (by definition) agrees with itself. And it's not always obvious to a new programmer whether a given piece of code is intended to be run by the server or by the client.
 
-#### Example
-One of my early modifications to the engine was to missionaries. In EU2, missionary success is determined at sending time. A missionary might be working for a decade or more, but if you save the game and examine the file, you'll see either "success = yes" or "success = no" in the script block. You can easily cheat it by simply changing a no to a yes.  
+#### An Unfortunate Example
+One of my early modifications to the engine was to missionaries. In EU2, missionary success is determined at sending time. A missionary might be working for a decade or more, but if you save the game and examine the file immediately after sending, you'll see either "success = yes" or "success = no" in the script block. You can easily cheat it by simply changing a no to a yes.  
 
 I didn't like the Calvinist interpretation, so I found the place in the code where the missionary is sent and the place where actual conversion happens. The code looked something like this:
 
@@ -39,7 +39,7 @@ I didn't like the Calvinist interpretation, so I found the place in the code whe
         }
     }
 
-*(not at all the actual code - I wrote this from memory and haven't looked at the real code in months - but you can see the idea. There is also internal logic that routes CMissionaryEvents to the correct country at the correct time, logic that cancels missionaries if the province changes hands or if the country changes religions, a check for possibly changing cultures, popup messages for the player, yada yada yada)*
+*(not the actual code - I wrote this from memory and haven't looked at the real code in months - but you can see the idea. There is also internal logic that routes events to the correct country at the correct time, logic that cancels missionaries if the province changes hands or if the country changes religions, a check for possibly changing cultures, popup messages for the player, yada yada yada)*
 
 I removed the `success` field from the event and changed the handler logic to:
 
