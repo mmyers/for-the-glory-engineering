@@ -8,7 +8,7 @@ The [Europa engine](https://en.wikipedia.org/wiki/Paradox_Development_Studio#Gam
 
 As an example, take this simple event window:
 
-![St. Albans](/assets/images/st-albans-old.png)
+![St. Albans](/for-the-glory-engineering/assets/images/st-albans-old.png)
 
 That's a lot of event text - this event is from the AGCEEP mod, which sometimes resembles an interactive history book. But nothing looks particularly unusual about this event. You can read to the bottom, then you just scroll down to read the rest of the text. Right?
 
@@ -76,6 +76,6 @@ After that key insight, fixing the window wasn't a very difficult process. I sim
 
 The final result isn't very impressive to a modern audience, but I worked hard for it, so you'd better appreciate it.
 
-![St. Albans](/assets/images/st-albans-new.gif)  
+![St. Albans](/for-the-glory-engineering/assets/images/st-albans-new.gif)  
 *(note that I also fixed a very old problem causing the event window to be sized as if the text were not in a scroll box, leaving a blank space between the text and the buttons.)  
 (also ignore the Chimú shield - it's larger than the English shield, so I was using it to test that I didn't accidentally cause an overlap somewhere.)*
