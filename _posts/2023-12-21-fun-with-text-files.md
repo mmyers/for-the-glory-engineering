@@ -76,30 +76,30 @@ Uh. Hmm. "Muslim Nations" isn't even a real country. It's a made-up country that
     grep -i 'worth inflation' --text log.txt | grep -v 'Muslim Nations' --text | tail -n 50
 
 There we go. Now the output looks like:
+    
+    1591-07-11 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13723920 is worth inflation (priority 99.0)
+    1591-07-28 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13723920 is worth inflation (priority 99.0)
+    1591-08-13 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1591-08-29 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13745103 is worth inflation (priority 99.3)
+    1591-09-10 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13745103 is worth inflation (priority 99.3)
+    1591-09-29 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13745103 is worth inflation (priority 99.3)
+    1591-10-22 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1591-11-17 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-01-25 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-02-03 : Netherlands decides that _CAI_PLAN_SEND_COLONIST_ plan #13732589 is worth inflation (priority 81.0)
+    1592-02-19 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-02-27 : Netherlands decides that _CAI_PLAN_SEND_COLONIST_ plan #13732589 is worth inflation (priority 81.0)
+    1592-03-13 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-04-20 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-05-24 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-06-16 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-07-13 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-09-27 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1592-11-06 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
+    1593-00-01 : Netherlands decides that _CAI_PLAN_SEND_COLONIST_ plan #13861643 is worth inflation (priority 81.0)
+    1593-00-20 : England decides that _CAI_PLAN_SEND_COLONIST_ plan #13770845 is worth inflation (priority 97.0)
+    1593-01-17 : England decides that _CAI_PLAN_SEND_COLONIST_ plan #13890232 is worth inflation (priority 97.0)
 
-```1591-07-11 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13723920 is worth inflation (priority 99.0)
-1591-07-28 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13723920 is worth inflation (priority 99.0)
-1591-08-13 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1591-08-29 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13745103 is worth inflation (priority 99.3)
-1591-09-10 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13745103 is worth inflation (priority 99.3)
-1591-09-29 : Austria decides that _CAI_PLAN_BUILD_CITYRIGHTS_ plan #13745103 is worth inflation (priority 99.3)
-1591-10-22 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1591-11-17 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-01-25 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-02-03 : Netherlands decides that _CAI_PLAN_SEND_COLONIST_ plan #13732589 is worth inflation (priority 81.0)
-1592-02-19 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-02-27 : Netherlands decides that _CAI_PLAN_SEND_COLONIST_ plan #13732589 is worth inflation (priority 81.0)
-1592-03-13 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-04-20 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-05-24 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-06-16 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-07-13 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-09-27 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1592-11-06 : Kazan decides that _CAI_PLAN_BUILD_BAILIFF_ plan #13264264 is worth inflation (priority 2210.0)
-1593-00-01 : Netherlands decides that _CAI_PLAN_SEND_COLONIST_ plan #13861643 is worth inflation (priority 81.0)
-1593-00-20 : England decides that _CAI_PLAN_SEND_COLONIST_ plan #13770845 is worth inflation (priority 97.0)
-1593-01-17 : England decides that _CAI_PLAN_SEND_COLONIST_ plan #13890232 is worth inflation (priority 97.0)
-```
 That's the kind of thing I want to see. Austria is minting to pay for a governor, which reduces inflation besides increasing income. That's a good use of money. Kazan is a poor country just trying to promote tax collectors. Probably a good use of money, although it's taking them a long time to build up enough cash to do it. How much inflation is worth it for a single tax collector? What would *I* do if I were playing Kazan?
 *(It occurs to me that I built a new system to help both players and AIs evaluate buildings back in the [June 2023 beta patch](https://forum.paradoxplaza.com/forum/threads/ftg-1-3-beta-june-2023.1589118/). The AI does use that system for deciding WHICH provinces to build in, but it does not currently use it to decide if a building is worth taking some inflation. I should put that on the to-do list.)*
 
