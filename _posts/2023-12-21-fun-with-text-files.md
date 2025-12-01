@@ -71,7 +71,7 @@ Now we're getting somewhere! Let's look at some output:
 
 Uh. Hmm. "Muslim Nations" isn't even a real country. It's a made-up country that exists only to provide a random number generator for [Alun's Realistic Reformation Mod](https://github.com/mmyers/FTG_Empire) (the name is a leftover from EU2 and normally isn't seen by a player). It has one province that is off-map and has no income. I don't need to see an activity of "Muslim Nations". How do I get rid of it?
 
-[This Stack Overflow answer](https://stackoverflow.com/questions/10411616/grep-regex-not-containing-a-string) explains how to match when a string is not present. I need to pipe the `grep` output through a ` grep -v 'Muslim Nations'` command before `tail`ing it. We also still need a `--text` in the second `grep` command since it will still see non-ASCII characters.
+[This Stack Overflow answer](https://stackoverflow.com/questions/10411616/grep-regex-not-containing-a-string) explains how to match when a string is not present. I need to pipe the `grep` output through a `grep -v 'Muslim Nations'` command before `tail`ing it. We also still need a `--text` in the second `grep` command since it will still see non-ASCII characters.
 
     grep -i 'worth inflation' --text log.txt | grep -v 'Muslim Nations' --text | tail -n 50
 
