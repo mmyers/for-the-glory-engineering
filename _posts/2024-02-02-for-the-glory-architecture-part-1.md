@@ -20,7 +20,7 @@ I didn't like the Calvinist interpretation, so I found the place in the code whe
 ```c++
 public void CCountry::SendMissionary(CProvince &prov)
 {
-    bool success = this->GetMissionaryChance(prov);
+    bool success = CMath::GetSuccess(100, this->GetMissionaryChance(prov));
     CMissionaryEvent *event = new CMissionaryEvent;
     event->SetSuccessful(success);
     event->SetTargetProvince(prov);
